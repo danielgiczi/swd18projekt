@@ -9,6 +9,7 @@ body{
     box-sizing: border-box;
     min-height: 100%;
     background: #fff;
+    padding-top:80px;
 }
 
 body *,body *:before,body *:after {
@@ -23,3 +24,7 @@ a:hover{
     text-decoration: none;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}

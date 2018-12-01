@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Raleway" rel="stylesheet">
     <title></title>    
     <!-- CSS -->
 </head>
@@ -11,13 +11,35 @@
     <header>
         <div class="header-container">
             <a href="/" class="logo">
-                <span></span>
+                <!-- schnell mit google-translate das Wort 'Rezept' übersetzt.
+                Bitte mit etwas besseres austauschen
+                Sobald wir die Zeichen haben, nehmen wir dann die 'Pinyin' Schreibweise davon                
+                Zb bei diesem Beispiel kann(??) der Site-Name shipu.at sein(??
+                -->                
+                <span class="character">食譜</span>
+                <span class="title">The cooking site</span>
             </a>
+
+            <input type="checkbox" class="mobile-toggle" id="mobile-toggle" />
+            <label for="mobile-toggle" class="mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="main">
+                <ul>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/datenschutz">Datenschutz</a></li>
+                    <li><a href="/impressum">Impressum</a></li>
+                </ul>                
+            </nav>                        
         </div>        
     </header>
     <!-- CONTENT -->
     <footer>
-        Footer
+        
     </footer>
 </body>
 </html>

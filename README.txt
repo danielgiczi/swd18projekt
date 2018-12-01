@@ -3,8 +3,6 @@ SWD18 Semster1 WebTechnik Gruppenarbeit
 Daniel Giczi 
 Dong Xiaodi 
 
-- Reset.css http://meyerweb.com/eric/tools/css/reset/
-
 Arbeitaufteilung:
 
 Daniel Giczi:
@@ -30,3 +28,7 @@ designteschnise Gruppierung in eigenen CSS-Datei umzusetzen: (ZB.blog-overview.c
 slider.css, hero.css,...)  Diese werden automatisch bei jedem Request am <header> angefügt.
 - Weitere Pages können in /pages/ anegelegt werden. Auch diese werden automatisc ermittelt. 
 (zB bei Aufruf von '/' wird der Inhalt von home.html eingeblendet, bei /blog-detail die blog-detail.html
+
+Externe Resourcen, Lizenzen:
+- Reset.css http://meyerweb.com/eric/tools/css/reset/
+- www.pexels.com Lizenzfreie Bilder
