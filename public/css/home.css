@@ -50,12 +50,12 @@
 
     .intro .hero .title::before{
         content: '';
-        background: url('i/iconfinder_food-drink-01_808990.svg')no-repeat;
+        background: url('i/iconfinder_Tilda_Icons_1ed_book_3586373.svg')no-repeat;
         background-size: cover;
         width:2.8rem;
         height: 2.8rem;
         display: block;
-        margin:0 auto 1rem auto;
+        margin:0 auto .8rem auto;
     }
 
     .intro .hero figcaption .title:after{
