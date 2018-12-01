@@ -1,0 +1,6 @@
+TODOs:
+
+- The Cooking Site -> Evtl was besseres finden / Google Translate prüfen
+- Hero Text -> Evtl was besseres / Google Translate prüfen
+- Weitere TODOs erfassen
+- Alle neuen Logos und Fotos in Readme notieren. NUR lizenzfreie Sachen verwenden (iconfinder, pexels.com, etc...)

@@ -44,7 +44,7 @@
 
     .intro .hero figcaption .title{
         color:#ffF;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         text-transform: uppercase;
         letter-spacing: 0.04em;
         line-height: 140%;
@@ -88,6 +88,7 @@
         position: relative;
         padding: 1rem 1rem 1rem 1rem;
         background: #e4e4e4;
+        overflow: hidden;
     }
 
     .intro .numrecipes .title{
@@ -104,6 +105,7 @@
         display: block;
         padding: 0 0 .5rem 0;
         line-height: 100%;
+        font-size: 1.2rem;
     }
 
     .intro .numrecipes .counter{
@@ -115,7 +117,7 @@
     }
 
     .intro .numrecipes .counter:not(:last-child){
-        margin:0 0 1rem 0;
+        margin:0 0 .5rem 0;
     }
 
     .intro .numrecipes .counter:before{
@@ -213,7 +215,7 @@
         transform:translateX(-50%) translateY(-50%);
         width: 100px;
         height: 100px;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: bold;
         background: #fff;
         border-radius: 50%;
@@ -224,9 +226,9 @@
     .intro .topmonth .title::before{
         content: '';
         display: block;
-        height: 3rem;
-        width: 3rem;
-        margin:0 auto 0 auto;
+        height: 3.5rem;
+        width: 3.5rem;
+        margin: 0 auto -.2rem auto;
         background: url('i/iconfinder_General_-_Office_51_1471108.svg');
     }
 
@@ -246,6 +248,7 @@
     }
 
     .intro .topmonth .recipe figcaption{
+        overflow: hidden;
         background: rgb(0, 0, 0, .3);
         text-transform: uppercase;
         color: #fff;
@@ -267,41 +270,99 @@
         font-size: 1rem;
     }
 
+    .intro .topmonth .ingredients-toggle::before{
+        position: absolute;
+        right:1rem;
+        top:0;    
+        content: '+';    
+        bottom:0;
+        cursor:pointer;
+        display: block;
+        color: #fff;
+        font-size: 2.4rem;
+    }
+
     .intro .topmonth .ingredients{
-        display: none;
+        position: absolute;
+        left:1rem;
+        bottom:4rem;
+        right:1rem;        
+        transition: all 400ms ease;
+        -webkit-transition: all 400ms ease;
+        visibility: collapse;
+        opacity: 0;
+    }
+
+    .intro .topmonth .ingredients:after{
+        content: '';
+        display: block;
+        clear:both;
+    }
+
+    .intro .topmonth .ingredients li{
+        display: block;
+        float:left;
+        width:43%;
+        font-size: 1.2rem;
+        margin:0 5% .5rem 0;
+        padding:0 0 .5rem 0;
+        color: #fff;
+        min-height: 40px;
+        border-bottom: 1px solid #fff;
     }
 
     #recipe-ingredients-toggle{
         display: none;
     }
 
-    .intro .topmonth .ingredients-toggle{
-        position: absolute;
-        right:0;
-        top:0;
-        bottom:0;
-        height: 100%;
-        width:3rem;
-        border-left:1px solid #fff;
-        cursor:pointer;
+    #recipe-ingredients-toggle:checked + .recipe .ingredients{
+        visibility: visible;
+        opacity: 1;
     }
 
+    #recipe-ingredients-toggle:checked + .recipe img{
+        filter:brightness(50%);
+    }
+
+  
+
+    
+
+    
+
+}
+
+@media screen and (min-width: 400px){
     .intro .topmonth .ingredients-toggle:before{
-        content: '+';
-        display: block;
+        height: 100%;
+        width:3rem;
+        right: 0;
+        border-left:1px solid #fff;
         font-size: 4rem;
-        color: #fff;
         text-align: center;
         line-height: 3rem;
     }
 
+    .intro .numrecipes .counter:not(:last-child){
+        margin:0 0 1.4rem 0;
+    }
 }
 
-@media screen and (min-width: 640){
-    
-}
 
-
-@media screen and (min-width:0){
-    
+@media screen and (min-width:641px){
+    body:after{
+        content: 'Bisher nur für smartphones optimiert (unter 641px) -> Mobile First';
+        position:fixed;
+        font-size: 3rem;
+        line-height: 100vh;
+        background: rgba(255,255,255,.8);
+        text-align: center;
+        display: flex;
+        margin: auto;
+        top:80px;
+        display: block;
+        left:0;
+        right:0;
+        bottom:0;
+    }
 }

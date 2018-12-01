@@ -67,4 +67,8 @@ header{
         color:#000;
         display: block;
     }
+
+    header .main li:last-child a{
+        border-bottom:3px solid #fff;
+    }
 }

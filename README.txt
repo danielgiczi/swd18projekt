@@ -28,14 +28,18 @@ Technisches Readme:
 designteschnise Gruppierung in eigenen CSS-Datei umzusetzen: (ZB.blog-overview.css, blog-detail.css, 
 slider.css, hero.css,...)  Diese werden automatisch bei jedem Request am <header> angefügt.
 - Weitere Pages können in /pages/ anegelegt werden. Auch diese werden automatisc ermittelt. 
-(zB bei Aufruf von '/' wird der Inhalt von home.html eingeblendet, bei /blog-detail die blog-detail.html
+(zB bei Aufruf von '/' wird der Inhalt von home.html eingeblendet, bei /blog-detail die blog-detail.html)
 
-Externe Resourcen, Lizenzen:
-- Reset.css http://meyerweb.com/eric/tools/css/reset/
+Externe Resourcen, Lizenzen. Generellen wurden nur lizenzfreien Fotos/Logos verwendet: 
+- Reset.css http://meyerweb.com/eric/tools/css/reset/ (Public domain)
 - www.pexels.com Lizenzfreie Bilder
+- beef-bowl-cooking-262897.jpg (Startseite)
+- bowl-chinese-food-close-up-688803.jpg (Startseite)
 
-- Icons:
-    • https://www.iconfinder.com/icons/1816095/chinese_dance_dragon_face_head_new_year_icon
-    • https://www.iconfinder.com/icons/1816096/chinese_fan_new_year_icon
+- Icons in verwendung:    
     • https://www.iconfinder.com/icons/808990/chief_cook_food_kitchen_icon (Startseite)
     • https://www.iconfinder.com/icons/1471108/crest_crown_general_item_jwellery_kings_crown_office_icon (Startseite)
+
+- Icons heruntergeladen aber nicht in verwendung
+    • https://www.iconfinder.com/icons/1816095/chinese_dance_dragon_face_head_new_year_icon
+    • https://www.iconfinder.com/icons/1816096/chinese_fan_new_year_icon

@@ -2,8 +2,27 @@ document.addEventListener("DOMContentLoaded", function () {
     //Die Rezepte-Anzahl wird nur animiert wenn JS aktiviert ist
     document.documentElement.classList += " js";
 
+    initMobile();
+
     initNumrecipesCounters();
 })
+
+
+function initMobile(){
+    var mobileOpen = false;
+    document.querySelector("header .mobile").addEventListener("click", function(){
+        mobileOpen = !mobileOpen;
+
+        if(mobileOpen){
+            document.documentElement.classList += " mobile-open";
+        }
+        else{
+            document.documentElement.className = document.documentElement.className.replace(" mobile-open", "")
+        }
+        
+    }, false)
+}
+
 
 /**
   *@author Daniel Giczi<daniel.giczi@edu.fh-joanneum.at>
