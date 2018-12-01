@@ -32,3 +32,8 @@ slider.css, hero.css,...)  Diese werden automatisch bei jedem Request am <header
 Externe Resourcen, Lizenzen:
 - Reset.css http://meyerweb.com/eric/tools/css/reset/
 - www.pexels.com Lizenzfreie Bilder
+
+- Icons:
+    • https://www.iconfinder.com/icons/1816095/chinese_dance_dragon_face_head_new_year_icon
+    • https://www.iconfinder.com/icons/1816096/chinese_fan_new_year_icon
+    • https://www.iconfinder.com/icons/808990/chief_cook_food_kitchen_icon (Startseite)

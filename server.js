@@ -10,6 +10,8 @@ app.use("/public/img", express.static(path.join(__dirname, "public", "img")))
 
 app.use("/public/css", express.static(path.join(__dirname, "public", "css")))
 
+app.use("/public/js", express.static(path.join(__dirname, "public", "js")))
+
 var getPageData = function (folder) {
     var html = fs.readFileSync(path.join(__dirname, "index.html"))
 

@@ -28,3 +28,8 @@ img{
     max-width: 100%;
     display: block;
 }
+
+.character{
+    font-family: 'Noto Sans TC';
+    line-height: 100%;
+}

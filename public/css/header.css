@@ -7,6 +7,7 @@ header{
     left:0;
     right:0;
     top:0;
+    z-index: 999;
 }
 
 .header-container{
@@ -24,11 +25,9 @@ header{
     text-align: center;
 }
 
-.logo .character{
-    font-family: 'Noto Sans TC';
+.logo .character{    
     font-size: 40px;
-    color:#000;
-    line-height: 100%;
+    color:#000;    
     display: block;
 }
 
@@ -36,7 +35,7 @@ header{
     text-transform: uppercase;
     color:#3a3a3a;
     display: block;
-    margin:6px 0 0 0;
+    margin:4px 0 0 0;
     font-size: .8rem;
     font-weight: 500;
 }

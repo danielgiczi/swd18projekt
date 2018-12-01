@@ -1,3 +1,102 @@
 .intro{
- 
+    display: grid;
+    
+}
+
+@media screen and (min-width:0){
+    .intro{
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "hero hero"
+                             "top num";        
+        width:100vw;
+        height: calc(100vh - 81px);
+    }
+
+    .intro .hero{
+        grid-area: hero;
+    }
+
+    .intro .hero figure{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .intro .hero figure img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(60%);
+    }
+
+    .intro .hero figcaption{
+        position: absolute;
+        left:2rem;
+        right:2rem;
+        top: 50%;
+        transform:translateY(-50%);
+        text-align: center;
+    }
+
+    .intro .hero figcaption .title{
+        color:#ffF;
+        font-size: 1.5rem;
+        
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        line-height: 140%;
+    }
+
+    .intro .hero .title::before{
+        content: '';
+        background: url('i/iconfinder_food-drink-01_808990.svg')no-repeat;
+        background-size: cover;
+        width:2.8rem;
+        height: 2.8rem;
+        display: block;
+        margin:0 auto 1rem auto;
+    }
+
+    .intro .hero figcaption .title:after{
+        content: '';
+        border-bottom: 1px solid #fff;
+        width: 50%;
+        margin: 0 auto 1rem auto;
+        display: block;
+        padding: 1rem 0 0 0;
+    }
+
+    .intro .hero figcaption .character{
+        color: #fff;
+        text-align: center;
+        display: block;
+        letter-spacing: 0.1em;
+        font-size: 1.2rem;
+    }
+
+
+    .intro .hero figcaption p{
+        display: none
+    }
+
+
+
+    .intro .topmonth{
+        grid-area: top;
+    }
+
+    .intro .numrecipes{
+        grid-area: num;
+    }
+
+}
+
+@media screen and (min-width: 640){
+    
+}
+
+
+@media screen and (min-width:0){
+    
 }
