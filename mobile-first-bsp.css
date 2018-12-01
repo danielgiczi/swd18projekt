@@ -1,0 +1,59 @@
+/*Hier ein BSP für den Mobile-First-Aufbau von Webseiten
+
+Gegeben ist zB folgendes Html:
+
+<div class='container'>
+    <div class='box'>BOX1</div>
+    <div class='box'>BOX2</div>
+</div>
+
+*/
+
+
+/*Generelle Formatierung*/
+.container{
+    color: black;
+    background: gray;    
+    box-sizing: border-box;
+    display: block;
+}
+.container .box{
+    box-sizing: border-box;
+    display: block;
+}
+
+/*In der Smartphone-Ansicht werden die Boxes untereinander angezeigt*/
+@media screen and (max-width:640px){
+    .container{
+        padding:1rem;
+    }
+
+    .container .box{
+        padding: 1rem 2rem;
+        margin: 0 0 3rem 0;
+    }
+}
+
+/*Für die Tablet-Ansicht können die Abstände erhöht werden*/
+@media screen and (min-width:640px){
+    .container .box{
+        padding:2rem 4rem;        
+    }
+}
+
+/*Bei breiteren Tablets können die Boxen innerhalb der Container nebeneinander angezeigt werden*/
+@media screen and (min-width:1000px){
+    .container .box{        
+        float: left;
+        width:50%;
+    }
+    .container:after{content:'';display: block;clear: both;} /*clearfix*/
+}
+
+/*Auf der Desktop-Ansicht wird die Container zentriert*/
+@media screen and (min-width:1280px){
+    .container{        
+        max-width: 1100pX;
+        margin:0 auto;        
+    }    
+}
