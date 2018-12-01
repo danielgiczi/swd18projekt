@@ -23,25 +23,13 @@ header{
 }
 
 .logo:before{
-    content: 'D';
-    position: absolute;
-    font-weight: 900;
-    font-size: 3em;
-    color: #666;
-    left:0;
+ 
 }
 
 .logo:after{
-    content: 'X';
-    position: absolute;
-    font-weight: 900;
-    font-size: 3em;
-    color: #111;
-    left:30px;
+
 }
 
 .logo span{
-    position: absolute;
-    top:50%;
-    left:30px;
+
 }
