@@ -270,17 +270,7 @@
         font-size: 1rem;
     }
 
-    .intro .topmonth .ingredients-toggle::before{
-        position: absolute;
-        right:1rem;
-        top:0;    
-        content: '+';    
-        bottom:0;
-        cursor:pointer;
-        display: block;
-        color: #fff;
-        font-size: 2.4rem;
-    }
+   
 
     .intro .topmonth .ingredients{
         position: absolute;
@@ -333,7 +323,15 @@
 }
 
 @media screen and (min-width: 400px){
-    .intro .topmonth .ingredients-toggle:before{
+
+    .intro .topmonth .ingredients-toggle::before{
+        position: absolute;
+        top:0;    
+        content: '+';    
+        bottom:0;
+        cursor:pointer;
+        display: block;
+        color: #fff;
         height: 100%;
         width:3rem;
         right: 0;

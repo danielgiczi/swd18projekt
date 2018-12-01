@@ -9,9 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function initMobile(){
-    var mobileOpen = false;
-    document.querySelector("header .mobile").addEventListener("click", function(){
-        mobileOpen = !mobileOpen;
+    document.querySelector("header #mobile-toggle").addEventListener("change", function(){
+        var mobileOpen = this.checked;
 
         if(mobileOpen){
             document.documentElement.classList += " mobile-open";
