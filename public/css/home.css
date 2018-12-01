@@ -8,9 +8,12 @@
         grid-template-rows: 2fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "hero hero"
-                             "top num";        
+                             "num top";        
+        grid-row-gap: 3px;
+        grid-column-gap: 3px;
         width:100vw;
         height: calc(100vh - 81px);
+        padding: 3px;
     }
 
     .intro .hero{
@@ -42,12 +45,12 @@
     .intro .hero figcaption .title{
         color:#ffF;
         font-size: 1.5rem;
-        
         text-transform: uppercase;
         letter-spacing: 0.04em;
         line-height: 140%;
     }
 
+    /*
     .intro .hero .title::before{
         content: '';
         background: url('i/iconfinder_Tilda_Icons_1ed_book_3586373.svg')no-repeat;
@@ -57,7 +60,7 @@
         display: block;
         margin:0 auto .8rem auto;
     }
-
+    */
     .intro .hero figcaption .title:after{
         content: '';
         border-bottom: 1px solid #fff;
@@ -80,14 +83,216 @@
         display: none
     }
 
-
-
-    .intro .topmonth{
-        grid-area: top;
-    }
-
     .intro .numrecipes{
         grid-area: num;
+        position: relative;
+        padding: 1rem 1rem 1rem 1rem;
+        background: #e4e4e4;
+    }
+
+    .intro .numrecipes .title{
+        position: absolute;
+        left:0;
+        top:0;
+        right:0;
+        display: block;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .intro .numrecipes .counter-title{        
+        display: block;
+        padding: 0 0 .5rem 0;
+        line-height: 100%;
+    }
+
+    .intro .numrecipes .counter{
+        background: #fff;
+        border-radius: 3px;
+        padding:1rem 2rem 1rem 4rem;
+        position: relative;        
+        border: 1px solid #d1d1d1;
+    }
+
+    .intro .numrecipes .counter:not(:last-child){
+        margin:0 0 1rem 0;
+    }
+
+    .intro .numrecipes .counter:before{
+        content: '';
+        display: block;
+        background: url('i/iconfinder_Tilda_Icons_1ed_book_3586373.svg');
+        width:2rem;
+        height: 2rem;
+        position: absolute;
+        left:1rem;
+        top:.8rem;
+    }
+
+    .intro .numrecipes .counter .loader:before {
+        content: '•';
+        display: block;
+        position: absolute;
+        right: 1rem;
+        font-size: 3rem;
+        transform:scale(0);
+        top: 50%;
+        height: auto;
+        line-height: 1rem;
+        margin-top:-0.5rem;
+        color: #589058;        
+    }
+
+    .intro .numrecipes .counter .loader:nth-of-type(1)::before{
+        right:.5rem
+    }
+
+    .intro .numrecipes .counter .loader:nth-of-type(2)::before{
+        right:1.2rem
+    }
+
+    .intro .numrecipes .counter .loader:nth-of-type(3)::before{
+        right:1.9rem
+    }
+
+    @keyframes counter-update{
+        0%{
+            transform:scale(0);
+        }
+        50%{
+            transform:scale(1);
+        }
+        100%{
+            transform:scale(0);
+        }
+    }
+
+    html.js  .intro .numrecipes .counter .loader:nth-of-type(1)::before{
+        animation: counter-update infinite 1s;
+    }
+
+    html.js  .intro .numrecipes .counter .loader:nth-of-type(2)::before{
+        animation: counter-update infinite 1s .13s;
+    }
+
+    html.js  .intro .numrecipes .counter .loader:nth-of-type(3)::before{
+        animation: counter-update infinite 1s .25s;
+    }
+
+
+    .intro .numrecipes #today-counter-value::before,
+    .intro .numrecipes #today-counter-value,
+    .intro .numrecipes #counter-value,
+    .intro .numrecipes #counter-value::before
+    {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html:not(.js) .intro .numrecipes #today-counter-value span,
+    html:not(.js) .intro .numrecipes #counter-value span{
+        display: none;
+    }
+
+    html:not(.js) .intro .numrecipes #today-counter-value:before,
+    html:not(.js) .intro .numrecipes #counter-value:before{
+        content:attr(data-count)
+    }
+
+    .intro .topmonth{
+        grid-area: top;      
+        position: relative;
+    }
+
+    .intro .topmonth .title{
+        display: block;
+        text-align: center;
+        line-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform:translateX(-50%) translateY(-50%);
+        width: 100px;
+        height: 100px;
+        font-size: 1rem;
+        font-weight: bold;
+        background: #fff;
+        border-radius: 50%;
+        z-index: 1;
+        border: 1px solid #c1c1c1;    
+    }
+
+    .intro .topmonth .title::before{
+        content: '';
+        display: block;
+        height: 3rem;
+        width: 3rem;
+        margin:0 auto 0 auto;
+        background: url('i/iconfinder_General_-_Office_51_1471108.svg');
+    }
+
+    .intro .topmonth .recipe{
+        height: 100%;
+        width: 100%;
+    }
+
+    .intro .topmonth .recipe figure{
+        height: 100%;
+    }
+
+    .intro .topmonth .recipe figure img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .intro .topmonth .recipe figcaption{
+        background: rgb(0, 0, 0, .3);
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 0.08em;
+        text-align: left;
+        font-size: 1.4rem;
+        display: block;
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        padding-left:2rem;
+        padding-right: 2rem;
+        line-height: 3rem;
+        height:3rem;
+    }
+
+    .intro .topmonth .recipe figcaption .character{
+        font-size: 1rem;
+    }
+
+    .intro .topmonth .ingredients{
+        display: none;
+    }
+
+    #recipe-ingredients-toggle{
+        display: none;
+    }
+
+    .intro .topmonth .ingredients-toggle{
+        position: absolute;
+        right:0;
+        top:0;
+        bottom:0;
+        height: 100%;
+        width:3rem;
+        border-left:1px solid #fff;
+        cursor:pointer;
+    }
+
+    .intro .topmonth .ingredients-toggle:before{
+        content: '+';
+        display: block;
+        font-size: 4rem;
+        color: #fff;
+        text-align: center;
+        line-height: 3rem;
     }
 
 }

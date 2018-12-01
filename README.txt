@@ -22,6 +22,7 @@ Dazu Beispiel in /moile-first-bsp.css)
 -generell keine IDs
 
 Technisches Readme:
+- Beim Commit wird die eingerichtete Heroku-App automatisch aktualisiert: https://swd18projekt.herokuapp.com/
 - zum Starten des Servers ist im Terminal 'npm start' einzugeben. Seite startet unter localhost:3000
 - Weitere CSS Dateien können frei im Ordner /public/css erstellt werden. Es ist empfehlenswert jede 
 designteschnise Gruppierung in eigenen CSS-Datei umzusetzen: (ZB.blog-overview.css, blog-detail.css, 
@@ -37,3 +38,4 @@ Externe Resourcen, Lizenzen:
     • https://www.iconfinder.com/icons/1816095/chinese_dance_dragon_face_head_new_year_icon
     • https://www.iconfinder.com/icons/1816096/chinese_fan_new_year_icon
     • https://www.iconfinder.com/icons/808990/chief_cook_food_kitchen_icon (Startseite)
+    • https://www.iconfinder.com/icons/1471108/crest_crown_general_item_jwellery_kings_crown_office_icon (Startseite)
