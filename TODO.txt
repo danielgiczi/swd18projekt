@@ -4,3 +4,4 @@ TODOs:
 - Hero Text -> Evtl was besseres / Google Translate prüfen
 - Weitere TODOs erfassen
 - Alle neuen Logos und Fotos in Readme notieren. NUR lizenzfreie Sachen verwenden (iconfinder, pexels.com, etc...)
+- dg an dg: Wenn geht einfaches CSS-Bundling implementieren wenns fad ist

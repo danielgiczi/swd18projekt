@@ -40,7 +40,7 @@ var getPageData = function (folder) {
     files.forEach((el, inx) => {
         if (el.indexOf(".css") == -1) return;
 
-        cssHtml += "<link rel='stylesheet' href='/public/css/" + el + "' type='text/css'/>" + (inx == files.length-1 ? "" : "\n\t")
+        cssHtml += "<link rel='stylesheet' href='/public/css/" + el + "?v="+ Math.floor(Math.random() * 100000) +"' type='text/css'/>" + (inx == files.length-1 ? "" : "\n\t")
     })
 
     html = String(html).replace("<!-- CSS -->", cssHtml);
