@@ -40,6 +40,16 @@ header{
     font-weight: 500;
 }
 
+header .search{
+    padding:1rem 2rem;
+}
+
+header .search-value{
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
 
 @media screen and (min-width:0px){
     header .main{
@@ -58,7 +68,7 @@ header{
         max-height: 240px;
     }
 
-    header .main li:not(:last-child){
+    header .main li{
         border-bottom: 1px solid #e4e4e4;
     }
 
@@ -68,7 +78,5 @@ header{
         display: block;
     }
 
-    header .main li:last-child a{
-        border-bottom:3px solid #fff;
-    }
+    
 }
