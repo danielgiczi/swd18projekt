@@ -35,6 +35,10 @@ Externe Resourcen, Lizenzen. Generellen wurden nur lizenzfreien Fotos/Logos verw
 - www.pexels.com Lizenzfreie Bilder
 - beef-bowl-cooking-262897.jpg (Startseite)
 - bowl-chinese-food-close-up-688803.jpg (Startseite)
+- https://www.pexels.com/photo/woman-wearing-coat-762020/
+- https://www.pexels.com/photo/face-facial-hair-fine-looking-guy-614810/
+- https://www.pexels.com/photo/photo-of-woman-wearing-yellow-floral-top-871495/
+
 
 - Icons in verwendung:    
     • https://www.iconfinder.com/icons/808990/chief_cook_food_kitchen_icon (Startseite)

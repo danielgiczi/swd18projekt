@@ -71,7 +71,7 @@ function initNumrecipesCounters() {
     }
 
     var recursiveCall = function() {
-        setTimeout(increaseCounters, 300);
+        setTimeout(increaseCounters, 500);
     }
 
     recursiveCall();

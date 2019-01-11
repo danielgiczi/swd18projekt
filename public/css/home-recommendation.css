@@ -1,0 +1,30 @@
+.user-recommendations{
+    margin:4 rem 0;
+}
+
+.recommendation {
+
+}
+
+.recommendation__name {
+
+}
+
+.recommendation__img {
+    width:8rem;
+    height:8rem;
+    margin:0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.recommendation__img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.recommendation__description {
+
+}
