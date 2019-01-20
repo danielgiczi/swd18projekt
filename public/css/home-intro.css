@@ -13,6 +13,7 @@
         width:100vw;
         height: calc(100vh - 81px);
         padding: 3px;
+        margin:0 0 4rem 0;
     }
 
     .intro .hero{
@@ -49,17 +50,6 @@
         line-height: 140%;
     }
 
-    /*
-    .intro .hero .title::before{
-        content: '';
-        background: url('i/iconfinder_Tilda_Icons_1ed_book_3586373.svg')no-repeat;
-        background-size: cover;
-        width:2.8rem;
-        height: 2.8rem;
-        display: block;
-        margin:0 auto .8rem auto;
-    }
-    */
     .intro .hero figcaption .title:after{
         content: '';
         border-bottom: 1px solid #fff;
@@ -313,12 +303,6 @@
         filter:brightness(50%);
     }
 
-  
-
-    
-
-    
-
 }
 
 @media screen and (min-width: 400px){
@@ -347,19 +331,5 @@
 
 
 @media screen and (min-width:641px){
-    body:after{
-        content: 'Bisher nur für smartphones optimiert (unter 641px) -> Mobile First';
-        position:fixed;
-        font-size: 3rem;
-        line-height: 100vh;
-        background: rgba(255,255,255,.8);
-        text-align: center;
-        display: flex;
-        margin: auto;
-        top:80px;
-        display: block;
-        left:0;
-        right:0;
-        bottom:0;
-    }
+   
 }
