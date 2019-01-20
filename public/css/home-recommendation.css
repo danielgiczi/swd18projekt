@@ -18,10 +18,6 @@
     font-size: 1.2rem;
 }
 
-.user-recommendations__recommendation{
-
-}
-
 .recommendation {
     background: #e4e4e4;
     padding:2rem;
@@ -62,10 +58,6 @@
     display: block;
     color: #3a3a3a;
     margin:0 0 1rem 0;
-}
-
-.recommendation__description {
-
 }
 
 @media screen and (max-width: 640px){
