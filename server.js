@@ -31,6 +31,12 @@ var getPageData = function (folder) {
 
     html = String(html).replace("<!-- CONTENT -->", contentHtml);
 
+    if(process.env.NODE_ENV !== "production"){
+        html = String(html).replace("<!-- JS -->", '<script src="http://livejs.com/live.js"></script>')
+    }
+    
+
+
     var cssHtml = "";
 
     var files = fs.readdirSync(path.join(__dirname, "public", "css")) || []
@@ -40,7 +46,7 @@ var getPageData = function (folder) {
     files.forEach((el, inx) => {
         if (el.indexOf(".css") == -1) return;
 
-        cssHtml += "<link rel='stylesheet' href='/public/css/" + el + "?v="+ Math.floor(Math.random() * 100000) +"' type='text/css'/>" + (inx == files.length-1 ? "" : "\n\t")
+        cssHtml += "<link type='text/css' rel='stylesheet' href='/public/css/" + el + "'/>" + (inx == files.length-1 ? "" : "\n\t")
     })
 
     html = String(html).replace("<!-- CSS -->", cssHtml);
