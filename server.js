@@ -31,11 +31,6 @@ var getPageData = function (folder) {
 
     html = String(html).replace("<!-- CONTENT -->", contentHtml);
 
-    if(process.env.NODE_ENV !== "production"){
-        html = String(html).replace("<!-- JS -->", '<script src="http://livejs.com/live.js"></script>')
-    }
-    
-
 
     var cssHtml = "";
 
