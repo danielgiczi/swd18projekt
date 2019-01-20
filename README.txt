@@ -39,6 +39,7 @@ Externe Resourcen, Lizenzen. Generellen wurden nur lizenzfreien Fotos/Logos verw
 - https://www.pexels.com/photo/face-facial-hair-fine-looking-guy-614810/
 - https://www.pexels.com/photo/photo-of-woman-wearing-yellow-floral-top-871495/
 - https://www.pexels.com/photo/man-portrait-old-artist-25758/
+- https://www.pexels.com/photo/appetizer-bowl-chili-close-up-286283/
 
 
 - Icons in verwendung:    

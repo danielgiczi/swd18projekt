@@ -1,26 +1,29 @@
 <section class="intro">
     <div class="hero">
-        <figure>
+        <figure class="hero__img">
             <img src="/public/img/home/beef-bowl-cooking-262897.jpg" alt="Gericht" />
-            <figcaption>
-                <h2 class="title">Riesen Auswahl von Rezepten</h2>
-                <span class="character">巨人選擇</span>
-                <p>Egal ob Frühstück, Mittagessen, Dinner oder BBQ. Bei uns finden Sie die besten Rezepte für alle Angelegenheiten</p>
+            <figcaption class="hero__imgcaption imgcaption">
+                <h2 class="imgcaption__title">Riesen Auswahl von Rezepten</h2>
+                <span class="imgcaption__character character">巨人選擇</span>
+                <p class="imgcaption__paragraph">Egal ob Frühstück, Mittagessen, Dinner oder BBQ. Bei uns finden Sie die besten Rezepte für alle Angelegenheiten</p>
             </figcaption>
         </figure>
     </div>
     <div class="topmonth">
-            <span class="title">Rezept des Monats</span>
+            <span class="topmonth__title">Rezept des Monats</span>
             <input type="checkbox" id="recipe-ingredients-toggle"  />
-            <div class="recipe">                
-                <figure>
+            <div class="topmonth__recipe">                
+                <figure class="topmonth__img">
                     <img src="/public/img/home/bowl-chinese-food-close-up-688803.jpg" alt="Dim Sum"/>
-                    <figcaption>                        
+                    <figcaption class="topmonth__imgcaption imgcaption">                        
                         Dim Sum
-                        <label for="recipe-ingredients-toggle" class="ingredients-toggle"></label>
+                        <label for="recipe-ingredients-toggle" class="topmonth__ingredients-toggle">
+                            <span></span>
+                            <span></span>
+                        </label>
                     </figcaption>
                 </figure>
-                <ul class="ingredients">
+                <ul class="topmonth__ingredients">
                     <li>400g Mehl</li>
                     <li>20g Schmalz</li>
                     <li>100g Shiitake</li>
@@ -28,20 +31,45 @@
                 </ul>
             </div>
     </div>
+
+    <div class="topmonth topmonth--topyear">
+        <span class="topmonth__title">Rezept des Monats</span>
+        <input type="checkbox" id="recipe-ingredients-toggle"  />
+        <div class="topmonth__recipe">                
+            <figure class="topmonth__img">
+                <img src="/public/img/home/appetizer-bowl-chili-286283.jpg" alt="Dim Sum"/>
+                <figcaption class="topmonth__imgcaption imgcaption">                        
+                    Fried Noodles
+                    <label for="recipe-ingredients-toggle" class="topmonth__ingredients-toggle">
+                        <span></span>
+                        <span></span>
+                    </label>
+                </figcaption>
+            </figure>
+            <ul class="topmonth__ingredients">
+                <li>220g Nudeln</li>
+                <li>220g Hackfleisch</li>
+                <li>2 Tl. Kartoffelstärke</li>
+                <li>1/4 Tasse Hühnerbrühe</li>
+            </ul>
+        </div>
+</div>
+
+
     <div class="numrecipes">
-        <span class="counter-title">Rezepte gesamt</span>
-        <div class="counter">
+        <span class="numrecipes__counter-title">Rezepte gesamt</span>
+        <div class="numrecipes__counter">
             <div id="counter-value" data-count="2723"><span>0</span></div>            
-            <span class="loader"></span>
-            <span class="loader"></span>
-            <span class="loader"></span>
+            <span class="numrecipes__loader"></span>
+            <span class="numrecipes__loader"></span>
+            <span class="numrecipes__loader"></span>
         </div>              
-        <span class="counter-title">Heute neu</span>
-        <div class="counter">
+        <span class="numrecipes__counter-title">Heute neu</span>
+        <div class="numrecipes__counter">
             <div id="today-counter-value" data-count="54"><span>0</span></div>            
-            <span class="loader"></span>
-            <span class="loader"></span>
-            <span class="loader"></span>
+            <span class="numrecipes__loader"></span>
+            <span class="numrecipes__loader"></span>
+            <span class="numrecipes__loader"></span>
         </div>              
     </div>
 </section>

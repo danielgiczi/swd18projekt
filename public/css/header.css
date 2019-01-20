@@ -17,7 +17,6 @@ header{
     padding:10px 1rem 10px;
 }
 
-
 .logo{
     display: inline-block;
     width:120px;
@@ -77,6 +76,64 @@ header .search-value{
         color:#000;
         display: block;
     }
+}
 
-    
+
+@media screen and (min-width:1000px){
+    header .mobile {
+        display: none;
+    }
+
+    header .main{
+        top: .5rem;
+        max-height: initial;
+        left: 10rem;
+        right:4rem;
+        background: none;
+        width:auto;
+        text-align: right;
+        bottom:.5rem;        
+    }
+
+    header .main ul{
+        display: inline-block;
+        vertical-align: top;
+        height: 100%;
+    }
+
+    header .search{
+        display: inline-block;
+    }
+
+    header .main li{
+        display: inline-block;
+        margin:0 0 0 0rem;
+        border-bottom: none;
+        height: 100%;
+        border-right:1px solid #e4e4e4;
+    }
+
+    header .main a{
+        height: 100%;
+        text-align: center;
+        display: block;
+        position: relative;
+        min-width: 12rem;
+        transition: all 400ms ease;
+        -webkit-transition: all 400ms ease;
+        font-size: 1.1rem;
+    }
+
+    header .main a span{
+        top:50%;
+        position: absolute;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    header .main a:hover{
+        background: #e4e4e4;
+    }
 }

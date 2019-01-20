@@ -10,30 +10,31 @@
                              "num top";        
         grid-row-gap: 3px;
         grid-column-gap: 3px;
-        width:100vw;
+        width:100%;
         height: calc(100vh - 81px);
         padding: 3px;
         margin:0 0 4rem 0;
     }
 
-    .intro .hero{
+    .hero{
         grid-area: hero;
     }
 
-    .intro .hero figure{
+    .hero__img{
         height: 100%;
         width: 100%;
         position: relative;
     }
 
-    .intro .hero figure img{
+    .hero__img img{
         height: 100%;
         width: 100%;
         object-fit: cover;
         filter: brightness(60%);
+        position: absolute;  /*Sonst wird in grid-template-rows definierte Höhe ignoriert*/
     }
 
-    .intro .hero figcaption{
+    .hero__imgcaption{
         position: absolute;
         left:2rem;
         right:2rem;
@@ -42,7 +43,7 @@
         text-align: center;
     }
 
-    .intro .hero figcaption .title{
+    .imgcaption__title{
         color:#ffF;
         font-size: 1.8rem;
         text-transform: uppercase;
@@ -50,7 +51,7 @@
         line-height: 140%;
     }
 
-    .intro .hero figcaption .title:after{
+    .imgcaption__title:after{
         content: '';
         border-bottom: 1px solid #fff;
         width: 50%;
@@ -59,7 +60,7 @@
         padding: 1rem 0 0 0;
     }
 
-    .intro .hero figcaption .character{
+    .imgcaption__character{
         color: #fff;
         text-align: center;
         display: block;
@@ -67,11 +68,11 @@
         font-size: 1.2rem;
     }
 
-    .intro .hero figcaption p{
+    .imgcaption__paragraph{
         display: none
     }
 
-    .intro .numrecipes{
+    .numrecipes{
         grid-area: num;
         position: relative;
         padding: 1rem 1rem 1rem 1rem;
@@ -89,14 +90,14 @@
         text-align: center;
     }
 
-    .intro .numrecipes .counter-title{        
+    .numrecipes__counter-title{        
         display: block;
         padding: 0 0 .5rem 0;
         line-height: 100%;
         font-size: 1.2rem;
     }
 
-    .intro .numrecipes .counter{
+    .numrecipes__counter{
         background: #fff;
         border-radius: 3px;
         padding:1rem 2rem 1rem 4rem;
@@ -104,11 +105,8 @@
         border: 1px solid #d1d1d1;
     }
 
-    .intro .numrecipes .counter:not(:last-child){
-        margin:0 0 .5rem 0;
-    }
 
-    .intro .numrecipes .counter:before{
+    .numrecipes__counter:before{
         content: '';
         display: block;
         background: url('i/iconfinder_Tilda_Icons_1ed_book_3586373.svg');
@@ -119,7 +117,7 @@
         top:.8rem;
     }
 
-    .intro .numrecipes .counter .loader:before {
+    .numrecipes__loader:before {
         content: '•';
         display: block;
         position: absolute;
@@ -133,15 +131,15 @@
         color: #589058;        
     }
 
-    .intro .numrecipes .counter .loader:nth-of-type(1)::before{
+    .numrecipes__loader:nth-of-type(1)::before{
         right:.5rem
     }
 
-    .intro .numrecipes .counter .loader:nth-of-type(2)::before{
+    .numrecipes__loader:nth-of-type(2)::before{
         right:1.2rem
     }
 
-    .intro .numrecipes .counter .loader:nth-of-type(3)::before{
+    .numrecipes__loader:nth-of-type(3)::before{
         right:1.9rem
     }
 
@@ -157,43 +155,46 @@
         }
     }
 
-    html.js  .intro .numrecipes .counter .loader:nth-of-type(1)::before{
+    html.js .numrecipes__loader:nth-of-type(1)::before{
         animation: counter-update infinite 1s;
     }
 
-    html.js  .intro .numrecipes .counter .loader:nth-of-type(2)::before{
+    html.js .numrecipes__loader:nth-of-type(2)::before{
         animation: counter-update infinite 1s .13s;
     }
 
-    html.js  .intro .numrecipes .counter .loader:nth-of-type(3)::before{
+    html.js .numrecipes__loader:nth-of-type(3)::before{
         animation: counter-update infinite 1s .25s;
     }
 
-
-    .intro .numrecipes #today-counter-value::before,
-    .intro .numrecipes #today-counter-value,
-    .intro .numrecipes #counter-value,
-    .intro .numrecipes #counter-value::before
+    #today-counter-value::before,
+    #today-counter-value,
+    #counter-value,
+    #counter-value::before
     {
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    html:not(.js) .intro .numrecipes #today-counter-value span,
-    html:not(.js) .intro .numrecipes #counter-value span{
+    html:not(.js) #today-counter-value span,
+    html:not(.js) #counter-value span{
         display: none;
     }
 
-    html:not(.js) .intro .numrecipes #today-counter-value:before,
-    html:not(.js) .intro .numrecipes #counter-value:before{
+    html:not(.js) #today-counter-value:before,
+    html:not(.js) #counter-value:before{
         content:attr(data-count)
     }
 
-    .intro .topmonth{
+    .topmonth{
         grid-area: top;      
         position: relative;
     }
 
-    .intro .topmonth .title{
+    .topmonth--topyear{
+        display: none
+    }
+
+    .topmonth__title{
         display: block;
         text-align: center;
         line-height: 100%;
@@ -207,11 +208,11 @@
         font-weight: bold;
         background: #fff;
         border-radius: 50%;
-        z-index: 0;
+        z-index: 10;
         border: 1px solid #c1c1c1;    
     }
 
-    .intro .topmonth .title::before{
+    .topmonth__title::before{
         content: '';
         display: block;
         height: 3.5rem;
@@ -220,22 +221,22 @@
         background: url('i/iconfinder_General_-_Office_51_1471108.svg');
     }
 
-    .intro .topmonth .recipe{
+    .topmonth__recipe{
         height: 100%;
         width: 100%;
     }
 
-    .intro .topmonth .recipe figure{
+    .topmonth__img{
         height: 100%;
     }
 
-    .intro .topmonth .recipe figure img{
+    .topmonth__img img{
         width: 100%;
         object-fit: cover;
         height: 100%;
     }
 
-    .intro .topmonth .recipe figcaption{
+    .topmonth__imgcaption{
         overflow: hidden;
         background: rgb(0, 0, 0, .3);
         text-transform: uppercase;
@@ -254,16 +255,10 @@
         height:3rem;
     }
 
-    .intro .topmonth .recipe figcaption .character{
-        font-size: 1rem;
-    }
-
-   
-
-    .intro .topmonth .ingredients{
+    .topmonth__ingredients{
         position: absolute;
         left:1rem;
-        bottom:4rem;
+        bottom:3rem;
         right:1rem;        
         transition: all 400ms ease;
         -webkit-transition: all 400ms ease;
@@ -271,13 +266,13 @@
         opacity: 0;
     }
 
-    .intro .topmonth .ingredients:after{
+    .topmonth__ingredients:after{
         content: '';
         display: block;
         clear:both;
     }
 
-    .intro .topmonth .ingredients li{
+    .topmonth__ingredients li{
         display: block;
         float:left;
         width:43%;
@@ -293,42 +288,155 @@
         display: none;
     }
 
-    #recipe-ingredients-toggle:checked + .recipe .ingredients{
+    #recipe-ingredients-toggle:checked + .topmonth__recipe .topmonth__ingredients{
         visibility: visible;
         opacity: 1;
     }
 
-    #recipe-ingredients-toggle:checked + .recipe img{
+    #recipe-ingredients-toggle:checked + .topmonth__recipe img{
         filter:brightness(50%);
     }
-
 }
 
 @media screen and (min-width: 400px){
 
-    .intro .topmonth .ingredients-toggle::before{
+    .topmonth__ingredients-toggle{
         position: absolute;
-        top:0;    
-        content: '+';    
+        right:0;
+        top:0;
+        left:0;
         bottom:0;
-        cursor:pointer;
-        display: block;
-        color: #fff;
-        height: 100%;
-        width:3rem;
-        right: 0;
-        border-left:1px solid #fff;
-        font-size: 4rem;
-        text-align: center;
-        line-height: 3rem;
     }
 
-    .intro .numrecipes .counter:not(:last-child){
+    .topmonth__ingredients-toggle span{
+        position: absolute;
+        right: 2rem;
+        top:50%;        
+        background: #fff;
+        height: 4px;
+        width:24px;
+        display: block;
+        transition: opacity 400ms ease .2s, transform 400ms ease;
+        -webkit-transition: opacity 400ms ease .2s, transform 400ms ease;
+    }
+
+    .topmonth__ingredients-toggle span:nth-of-type(1){
+        transform:translateY(-50%) rotateZ(0deg);
+    }
+
+    .topmonth__ingredients-toggle span:nth-of-type(2){
+        transform:translateY(-50%) rotateZ(90deg);
+    }
+
+    #recipe-ingredients-toggle:checked + .topmonth__recipe .topmonth__ingredients-toggle span:nth-of-type(1) {
+        transform:translateY(-50%) rotateZ(45deg);
+    }
+
+    #recipe-ingredients-toggle:checked + .topmonth__recipe .topmonth__ingredients-toggle span:nth-of-type(2) {
+        transform:translateY(-50%) rotateZ(-45deg);
+    }
+}
+
+@media screen and (max-width:641px){
+    .numrecipes__counter:not(:last-child){
         margin:0 0 1.4rem 0;
     }
-}
 
+    .numrecipes__counter:not(:last-child){
+        margin:0 0 .5rem 0;
+    }
+
+}
 
 @media screen and (min-width:641px){
-   
+  
 }
+
+@media screen and (min-width:1000px){
+    .intro {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 5fr 2fr;
+        grid-template-areas: "hero num"
+                             "hero top";
+    }
+
+    .topmonth__ingredients-toggle{
+        display: none;
+    }
+
+    .topmonth__recipe img {
+        filter: brightness(40%);
+        transition: all 400ms ease;
+        -webkit-transition: all 400ms ease;
+    }
+
+    .topmonth:hover .topmonth__recipe img{
+        filter: brightness(100%);
+    }
+
+    .topmonth:hover .topmonth__ingredients{
+        opacity: 0;
+    }
+
+    .topmonth__ingredients{
+        opacity: 1;
+        visibility: visible;
+        bottom: 5rem;
+        transition: all 400ms ease;
+        -webkit-transition: all 400ms ease;
+    }
+    
+    .topmonth--topyear{
+        display: block;
+        grid-area:num;
+        overflow: hidden;
+    }
+
+    .numrecipes {
+        grid-area: auto;
+        position: absolute;
+        bottom: 3px;
+        left: 3px;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "h1 h2"
+                             "c1 c2";
+        display: grid;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        background: rgba(228, 228, 228, .8);
+    }
+    .numrecipes__counter-title:nth-of-type(1){
+        grid-area: h1;
+    }
+
+    .numrecipes__counter-title:nth-of-type(2){
+        grid-area: h2;
+    }
+
+    .numrecipes__counter:nth-of-type(1){
+        grid-area: c1;
+    }
+
+    .numrecipes__counter:nth-of-type(2){
+        grid-area: c2;
+    }
+
+    .numrecipes__counter{
+        padding-right: 5rem;
+    }
+
+    .topmonth__title{
+        top:0;
+        left:0;
+    }
+
+    .topmonth--topyear .topmonth__title{
+        display: none;
+    }
+
+    .topmonth__imgcaption{
+        text-align: center;
+    }
+}
+
