@@ -55,6 +55,14 @@ img{
     line-height: 100%;
 }
 
+input[type="text"]{
+    background: #fff;
+    border-radius: 3px;
+    padding:1rem 2rem;
+    position: relative;        
+    border: 1px solid #d1d1d1;
+}
+
 @media screen and (min-width:0){
     html, body,*:before,*:after {
         font-size: 13px;
