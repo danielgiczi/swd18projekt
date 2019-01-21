@@ -1,0 +1,443 @@
+.intro{
+    display: grid;
+}
+
+@media screen and (min-width:0){
+    .intro{
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "hero hero"
+                             "num top";        
+        grid-row-gap: 3px;
+        grid-column-gap: 3px;
+        width:100%;
+        height: calc(100vh - 81px);
+        padding: 3px;
+        margin:0 0 4rem 0;
+    }
+
+    .hero{
+        grid-area: hero;
+    }
+
+    .hero__img{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .hero__img img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(60%);
+        position: absolute;  /*Sonst wird in grid-template-rows definierte Höhe ignoriert*/
+    }
+
+    .hero__imgcaption{
+        position: absolute;
+        left:2rem;
+        right:2rem;
+        top: 50%;
+        transform:translateY(-50%);
+        text-align: center;
+    }
+
+    .imgcaption__title{
+        color:#ffF;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        line-height: 140%;
+    }
+
+    .imgcaption__title:after{
+        content: '';
+        border-bottom: 1px solid #fff;
+        width: 50%;
+        margin: 0 auto 1rem auto;
+        display: block;
+        padding: 1rem 0 0 0;
+    }
+
+    .imgcaption__character{
+        color: #fff;
+        text-align: center;
+        display: block;
+        letter-spacing: 0.1em;
+        font-size: 1.2rem;
+    }
+
+    .imgcaption__paragraph{
+        display: none
+    }
+
+    .numrecipes{
+        grid-area: num;
+        position: relative;
+        padding: 1rem 1rem 1rem 1rem;
+        background: #e4e4e4;
+        overflow: hidden;
+    }
+
+    .intro .numrecipes .title{
+        position: absolute;
+        left:0;
+        top:0;
+        right:0;
+        display: block;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .numrecipes__counter-title{        
+        display: block;
+        padding: 0 0 .5rem 0;
+        line-height: 100%;
+        font-size: 1.2rem;
+    }
+
+    .numrecipes__counter{
+        background: #fff;
+        border-radius: 3px;
+        padding:1rem 2rem 1rem 4rem;
+        position: relative;        
+        border: 1px solid #d1d1d1;
+    }
+
+
+    .numrecipes__counter:before{
+        content: '';
+        display: block;
+        background: url('i/iconfinder_Tilda_Icons_1ed_book_3586373.svg');
+        width:2rem;
+        height: 2rem;
+        position: absolute;
+        left:1rem;
+        top:.8rem;
+    }
+
+    .numrecipes__loader:before {
+        content: '•';
+        display: block;
+        position: absolute;
+        right: 1rem;
+        font-size: 3rem;
+        transform:scale(0);
+        top: 50%;
+        height: auto;
+        line-height: 1rem;
+        margin-top:-0.5rem;
+        color: #589058;        
+    }
+
+    .numrecipes__loader:nth-of-type(1)::before{
+        right:.5rem
+    }
+
+    .numrecipes__loader:nth-of-type(2)::before{
+        right:1.2rem
+    }
+
+    .numrecipes__loader:nth-of-type(3)::before{
+        right:1.9rem
+    }
+
+    @keyframes counter-update{
+        0%{
+            transform:scale(0);
+        }
+        50%{
+            transform:scale(1);
+        }
+        100%{
+            transform:scale(0);
+        }
+    }
+
+    html.js .numrecipes__loader:nth-of-type(1)::before{
+        animation: counter-update infinite 1s;
+    }
+
+    html.js .numrecipes__loader:nth-of-type(2)::before{
+        animation: counter-update infinite 1s .13s;
+    }
+
+    html.js .numrecipes__loader:nth-of-type(3)::before{
+        animation: counter-update infinite 1s .25s;
+    }
+
+    #today-counter-value::before,
+    #today-counter-value,
+    #counter-value,
+    #counter-value::before
+    {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html:not(.js) #today-counter-value span,
+    html:not(.js) #counter-value span{
+        display: none;
+    }
+
+    html:not(.js) #today-counter-value:before,
+    html:not(.js) #counter-value:before{
+        content:attr(data-count)
+    }
+
+    .topmonth{
+        grid-area: top;      
+        position: relative;
+    }
+
+    .topmonth--topyear{
+        display: none
+    }
+
+    .topmonth__title{
+        display: block;
+        text-align: center;
+        line-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform:translateX(-50%) translateY(-50%);
+        width: 100px;
+        height: 100px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        background: #fff;
+        border-radius: 50%;
+        z-index: 10;
+        border: 1px solid #c1c1c1;    
+    }
+
+    .topmonth__title::before{
+        content: '';
+        display: block;
+        height: 3.5rem;
+        width: 3.5rem;
+        margin: 0 auto -.2rem auto;
+        background: url('i/iconfinder_General_-_Office_51_1471108.svg');
+    }
+
+    .topmonth__recipe{
+        height: 100%;
+        width: 100%;
+    }
+
+    .topmonth__img{
+        height: 100%;
+    }
+
+    .topmonth__img img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .topmonth__imgcaption{
+        overflow: hidden;
+        background: rgb(0, 0, 0, .3);
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 0.08em;
+        text-align: left;
+        font-size: 1.4rem;
+        display: block;
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        padding-left:2rem;
+        padding-right: 2rem;
+        line-height: 3rem;
+        height:3rem;
+    }
+
+    .topmonth__ingredients{
+        position: absolute;
+        left:1rem;
+        bottom:3rem;
+        right:1rem;        
+        transition: all 400ms ease;
+        -webkit-transition: all 400ms ease;
+        visibility: collapse;
+        opacity: 0;
+    }
+
+    .topmonth__ingredients:after{
+        content: '';
+        display: block;
+        clear:both;
+    }
+
+    .topmonth__ingredients li{
+        display: block;
+        float:left;
+        width:43%;
+        font-size: 1.2rem;
+        margin:0 5% .5rem 0;
+        padding:0 0 .5rem 0;
+        color: #fff;
+        min-height: 40px;
+        border-bottom: 1px solid #fff;
+    }
+
+    #recipe-ingredients-toggle2,
+    #recipe-ingredients-toggle{
+        display: none;
+    }
+
+    #recipe-ingredients-toggle:checked + .topmonth__recipe .topmonth__ingredients{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #recipe-ingredients-toggle:checked + .topmonth__recipe img{
+        filter:brightness(50%);
+    }
+}
+
+@media screen and (min-width: 400px){
+
+    .topmonth__ingredients-toggle{
+        position: absolute;
+        right:0;
+        top:0;
+        left:0;
+        bottom:0;
+    }
+
+    .topmonth__ingredients-toggle span{
+        position: absolute;
+        right: 2rem;
+        top:50%;        
+        background: #fff;
+        height: 4px;
+        width:24px;
+        display: block;
+        transition: opacity 400ms ease .2s, transform 400ms ease;
+        -webkit-transition: opacity 400ms ease .2s, transform 400ms ease;
+    }
+
+    .topmonth__ingredients-toggle span:nth-of-type(1){
+        transform:translateY(-50%) rotateZ(0deg);
+    }
+
+    .topmonth__ingredients-toggle span:nth-of-type(2){
+        transform:translateY(-50%) rotateZ(90deg);
+    }
+
+    #recipe-ingredients-toggle:checked + .topmonth__recipe .topmonth__ingredients-toggle span:nth-of-type(1) {
+        transform:translateY(-50%) rotateZ(45deg);
+    }
+
+    #recipe-ingredients-toggle:checked + .topmonth__recipe .topmonth__ingredients-toggle span:nth-of-type(2) {
+        transform:translateY(-50%) rotateZ(-45deg);
+    }
+}
+
+@media screen and (max-width:641px){
+    .numrecipes__counter:not(:last-child){
+        margin:0 0 1.4rem 0;
+    }
+
+    .numrecipes__counter:not(:last-child){
+        margin:0 0 .5rem 0;
+    }
+
+}
+
+@media screen and (min-width:641px){
+  
+}
+
+@media screen and (min-width:1000px){
+    .intro {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 5fr 2fr;
+        grid-template-areas: "hero num"
+                             "hero top";
+    }
+
+    .topmonth__ingredients-toggle{
+        display: none;
+    }
+
+    .topmonth__recipe img {
+        filter: brightness(40%);
+        transition: all 400ms ease;
+        -webkit-transition: all 400ms ease;
+    }
+
+    .topmonth:hover .topmonth__recipe img{
+        filter: brightness(100%);
+    }
+
+    .topmonth:hover .topmonth__ingredients{
+        opacity: 0;
+    }
+
+    .topmonth__ingredients{
+        opacity: 1;
+        visibility: visible;
+        bottom: 5rem;
+        transition: all 400ms ease;
+        -webkit-transition: all 400ms ease;
+    }
+    
+    .topmonth--topyear{
+        display: block;
+        grid-area:num;
+        overflow: hidden;
+    }
+
+    .numrecipes {
+        grid-area: auto;
+        position: absolute;
+        bottom: 3px;
+        left: 3px;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "h1 h2"
+                             "c1 c2";
+        display: grid;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        background: rgba(228, 228, 228, .8);
+    }
+    .numrecipes__counter-title:nth-of-type(1){
+        grid-area: h1;
+    }
+
+    .numrecipes__counter-title:nth-of-type(2){
+        grid-area: h2;
+    }
+
+    .numrecipes__counter:nth-of-type(1){
+        grid-area: c1;
+    }
+
+    .numrecipes__counter:nth-of-type(2){
+        grid-area: c2;
+    }
+
+    .numrecipes__counter{
+        padding-right: 5rem;
+    }
+
+    .topmonth__title{
+        top:0;
+        left:0;
+    }
+
+    .topmonth--topyear .topmonth__title{
+        display: none;
+    }
+
+    .topmonth__imgcaption{
+        text-align: center;
+    }
+}
+

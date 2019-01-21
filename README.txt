@@ -7,12 +7,11 @@ Arbeitaufteilung:
 
 Daniel Giczi:
 - Header
-- Startseite: (Hero/Slider, 2-3 Reihe Blöcke)
+- Startseite: (Hero + 2-3 Blöcke + Bewertungen)
 
 Dong Xiaodi:
 - Footer
 - Blog Detail/Übersicht
-- Eventuell Startseite unten weitere Text/Bild Inhalte
 
 Style Vorgaben:
 -Mobile First (Breakpoints: Smartphone-Ansicht bis 640, Tablet-Ansicht bis 1000, weitere zB bei 1200/1400.
@@ -32,9 +31,15 @@ slider.css, hero.css,...)  Diese werden automatisch bei jedem Request am <header
 
 Externe Resourcen, Lizenzen. Generellen wurden nur lizenzfreien Fotos/Logos verwendet: 
 - Reset.css http://meyerweb.com/eric/tools/css/reset/ (Public domain)
-- www.pexels.com Lizenzfreie Bilder
-- beef-bowl-cooking-262897.jpg (Startseite)
-- bowl-chinese-food-close-up-688803.jpg (Startseite)
+
+Pexels.com - lizenzfreie Bilder
+- https://www.pexels.com/photo/beef-bowl-cooking-cuisine-262897/
+- https://www.pexels.com/photo/bowl-of-dimsum-688803/
+- https://www.pexels.com/photo/woman-wearing-coat-762020/
+- https://www.pexels.com/photo/face-facial-hair-fine-looking-guy-614810/
+- https://www.pexels.com/photo/photo-of-woman-wearing-yellow-floral-top-871495/
+- https://www.pexels.com/photo/man-portrait-old-artist-25758/
+- https://www.pexels.com/photo/appetizer-bowl-chili-close-up-286283/
 
 - Icons in verwendung:    
     • https://www.iconfinder.com/icons/808990/chief_cook_food_kitchen_icon (Startseite)
