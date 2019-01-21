@@ -48,6 +48,10 @@ footer .main{
     grid-area: nav;
 }
 
+footer .main li{
+    margin:0 0 .5rem 0;
+}
+
 footer a {    
     color: #fff;
     display: block;
