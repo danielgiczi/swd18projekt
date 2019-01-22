@@ -7,11 +7,12 @@ Arbeitaufteilung:
 
 Daniel Giczi:
 - Header
-- Startseite: (Hero + 2-3 Blöcke + Bewertungen)
+- Footer
+- Startseite
 
 Dong Xiaodi:
-- Footer
-- Blog Detail/Übersicht
+- Blog Übersicht
+- Blog Detail
 
 Style Vorgaben:
 -Mobile First (Breakpoints: Smartphone-Ansicht bis 640, Tablet-Ansicht bis 1000, weitere zB bei 1200/1400.
