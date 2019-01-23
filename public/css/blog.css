@@ -14,7 +14,7 @@ ul {
     text-align: center;
 }
 
-.name span {
+.span {
     color: black;
 }
 
@@ -46,16 +46,68 @@ ul {
     font-size: 15pt;
 }
 
+
+.clearfix{
+    display: block;
+    clear:both;
+}
+
+
+.blog-item{
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin:0 0 2rem 0;
+    display:block;
+}
+
+.blog-item figure{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: -1;
+}
+
+.blog-item figure img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.blog-item:nth-of-type(1) figure img{
+    object-position: 50% 28%;   
+}
+
+.blog-item:nth-of-type(2) figure img{
+    object-position: 50% 50%;   
+}
+
+.blog-item:nth-of-type(2) figure img{
+    object-position: 50% 50%;   
+}
+
+.blog-item .info{
+    position: absolute;    
+    left:1rem;
+    bottom:1rem;
+    right:1rem;
+}
+
 /* Lager Screens */
 
-@media(min-width:680px) {
-    .wrapper {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-column-gap: 1em;
-        grid-row-gap: 1em;
-        /* grid-auto-rows: 500px; */
-        grid-auto-rows: minmax(350px, auto);
+@media(min-width:1000px) {
+    .blog-items {
+float:left;
+        width:68%;
+        margin:0 2% 0 0;
+    }
+    .blog-aside{
+        float:left;
+        width:30%;
     }
 
 .wrapper > * {
