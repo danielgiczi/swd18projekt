@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    
+}
+
+.wrapper {
+    box-shadow: 0 0 20px 0 rgb(72, 94, 116, 0.7);
+}
+
+/* Lager Screen*/
+
+@media(min-width:680px) {
+    .wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        /* grid-auto-rows: 500px; */
+        /* grid-auto-rows: minmax(500px, 500px); */
+    }
+
+/*     .wrapper > * {
+        padding:2em;    
+    } */
+}

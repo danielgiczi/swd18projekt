@@ -1,21 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    color: #485e74;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+}
+
 .container {
-    background-color: #f9f9f9;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content:space-around ;
-    flex-wrap: wrap;
-    align-content: stretch;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
 }
 
-.item {
-    background-color:white;
-    width: 400px;
-    height: 400px;
-    margin: 20px;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-.item img {
-        width: 400px; 
-        height: 400px; 
+.name {
+    text-align: center;
+}
+
+.name span {
+    color: black;
+}
+
+.wrapper {
+    box-shadow: 0 0 20px 0 rgb(72, 94, 116, 0.7);
+}
+
+.wrapper > *{
+    padding: 1em;
+    
+}
+
+.info {
+    background: #e4e4e4;
+    border: 1px solid #333;
+}
+
+.info h3, .info ul {
+    text-align: center;
+    margin: 0 0 1em 0;
+}
+
+.about, .tags, .category {
+    background: #e4e4e4;
+    border: 1px solid #333;
+}
+
+.about p, .tags p, .category p {
+    font-size: 15pt;
+}
+
+/* Lager Screens */
+
+@media(min-width:680px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        /* grid-auto-rows: 500px; */
+        grid-auto-rows: minmax(350px, auto);
+    }
+
+.wrapper > * {
+    padding:2em;    
+}
+
+.info h3, .info ul, .name {
+    text-align: left;
+}
 }
