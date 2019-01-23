@@ -7,11 +7,12 @@ Arbeitaufteilung:
 
 Daniel Giczi:
 - Header
-- Startseite: (Hero + 2-3 Blöcke + Bewertungen)
+- Footer
+- Startseite
 
 Dong Xiaodi:
-- Footer
-- Blog Detail/Übersicht
+- Blog Übersicht
+- Blog Detail
 
 Style Vorgaben:
 -Mobile First (Breakpoints: Smartphone-Ansicht bis 640, Tablet-Ansicht bis 1000, weitere zB bei 1200/1400.
@@ -44,7 +45,8 @@ Pexels.com - lizenzfreie Bilder
 - Icons in verwendung:    
     • https://www.iconfinder.com/icons/808990/chief_cook_food_kitchen_icon (Startseite)
     • https://www.iconfinder.com/icons/1471108/crest_crown_general_item_jwellery_kings_crown_office_icon (Startseite)
+    • simpleicons.org facebook
+    • simpleicons.org twitter
 
-- Icons heruntergeladen aber nicht in verwendung
-    • https://www.iconfinder.com/icons/1816095/chinese_dance_dragon_face_head_new_year_icon
-    • https://www.iconfinder.com/icons/1816096/chinese_fan_new_year_icon
+Datenschutz Text
+    https://www.wko.at/service/wirtschaftsrecht-gewerberecht/muster-informationspflichten-website-datenschutzerklaerung.html
