@@ -50,3 +50,6 @@ Pexels.com - lizenzfreie Bilder
 
 Datenschutz Muster
     https://www.wko.at/service/wirtschaftsrecht-gewerberecht/muster-informationspflichten-website-datenschutzerklaerung.html
+
+Bewertungen:
+    Die Community-Kommentare wurde aus dem Kommentarbereich dieses Amazon Artikels entnommen: https://www.amazon.de/Ich-bin-dann-mal-schlank/dp/3932908635

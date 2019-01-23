@@ -21,8 +21,8 @@
 .recommendation {
     background: #e4e4e4;
     padding:2rem;
+    height: 22rem;
 }
-
 
 .recommendation:nth-of-type(even) {
     background: #f0f0f0;
