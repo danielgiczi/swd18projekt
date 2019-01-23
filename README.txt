@@ -14,12 +14,12 @@ Dong Xiaodi:
 - Blog Übersicht
 - Blog Detail
 
-Style Vorgaben:
--Mobile First (Breakpoints: Smartphone-Ansicht bis 640, Tablet-Ansicht bis 1000, weitere zB bei 1200/1400.
-Dazu Beispiel in /moile-first-bsp.css)
--englische Klassennamen; eventuell durch Bindestrich getrennt (zb: .container,.container-item,
-.blog-overview,.blog-item)
--generell keine IDs
+Setup Schritten:
+- Voraussetzung ist aktuelle npm Version (5.6.0 / 6.6.0)
+- Im Commandline den Ordner mit der package.json öffnen und Befehl 'npm i' ausführen
+- Server lässt sich mit 'npm start' starten
+- Webseite ist unter http://localhost:3000 erreichbar
+
 
 Technisches Readme:
 - Beim Commit wird die eingerichtete Heroku-App automatisch aktualisiert: https://swd18projekt.herokuapp.com/
@@ -30,7 +30,7 @@ slider.css, hero.css,...)  Diese werden automatisch bei jedem Request am <header
 - Weitere Pages können in /pages/ anegelegt werden. Auch diese werden automatisc ermittelt. 
 (zB bei Aufruf von '/' wird der Inhalt von home.html eingeblendet, bei /blog-detail die blog-detail.html)
 
-Externe Resourcen, Lizenzen. Generellen wurden nur lizenzfreien Fotos/Logos verwendet: 
+Externe Resourcen
 - Reset.css http://meyerweb.com/eric/tools/css/reset/ (Public domain)
 
 Pexels.com - lizenzfreie Bilder
@@ -42,11 +42,11 @@ Pexels.com - lizenzfreie Bilder
 - https://www.pexels.com/photo/man-portrait-old-artist-25758/
 - https://www.pexels.com/photo/appetizer-bowl-chili-close-up-286283/
 
-- Icons in verwendung:    
+- Icons in verwendung (Lizenzfrei)
     • https://www.iconfinder.com/icons/808990/chief_cook_food_kitchen_icon (Startseite)
     • https://www.iconfinder.com/icons/1471108/crest_crown_general_item_jwellery_kings_crown_office_icon (Startseite)
-    • simpleicons.org facebook
-    • simpleicons.org twitter
+    • https://simpleicons.org facebook (Footer)
+    • https://simpleicons.org twitter (Footer)
 
-Datenschutz Text
+Datenschutz Muster
     https://www.wko.at/service/wirtschaftsrecht-gewerberecht/muster-informationspflichten-website-datenschutzerklaerung.html

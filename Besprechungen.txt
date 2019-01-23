@@ -1,7 +1,0 @@
-Besprechungen: 
-
--2018-12-01: GIT Repository eingerichtet, Projekt beim Xiaodi eingerichtet.
-Logo besprochen: es ist irgend ein cool aussendes chinsesisches/japanisches Wort zu finden.
-Beim Logo wird dann relativ groß das Wort angezeigt und unterhalb kleiner mit anderen Schriftart zB: FOOD RECIPES, THE FOOD PORTAL, irgend wein Motto/Satz
-Dazu ist eine Schriftart fürs Logo und eine zweite für den allgemeinen Text zu finden.
-zB: bei fonts.google.com findet man open license Schriftarten.
