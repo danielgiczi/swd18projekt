@@ -16,6 +16,10 @@
     padding-top: 1em;
 }
 
+.wrapper span {
+    font-size: 15pt;
+}
+
 .blog-detail figure img{
     display:block;
     width:100%;
