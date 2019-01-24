@@ -134,7 +134,24 @@ ul {
         width:30%;
     }
 
-.info h3, .info ul, .name {
+/*.info h3, .info ul, .name {
     text-align: left;
+    }*/
+    .info h3 {
+    text-align: left;
+    font-size:  16pt;
+    color:black;
+    }
+
+    .info span {
+    text-align: left;
+    font-size: 14pt;
+    color: black;
+    }
+
+    .info li {
+    text-align: left;
+    font-size: 10pt;
+    color: black;
     }
 }
