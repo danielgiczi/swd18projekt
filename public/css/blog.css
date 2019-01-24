@@ -28,6 +28,7 @@ ul {
     margin: 0 0 1em 0;
     font-size:  16pt;
     color:black;
+    padding-top: 15px;
 }
 
 .info span {
@@ -149,6 +150,7 @@ ul {
     text-align: left;
     font-size:  16pt;
     color:black;
+    padding-top: 15px;
     }
 
     .info span {
