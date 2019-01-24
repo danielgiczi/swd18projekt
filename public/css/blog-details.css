@@ -7,26 +7,22 @@
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
-    
 }
 
-.wrapper {
-    box-shadow: 0 0 20px 0 rgb(72, 94, 116, 0.7);
+.container h1 {
+    text-align: center;
 }
 
-/* Lager Screen*/
+.blog-detail figure img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
 
-@media(min-width:680px) {
-    .wrapper {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-column-gap: 1em;
-        grid-row-gap: 1em;
-        /* grid-auto-rows: 500px; */
-        /* grid-auto-rows: minmax(500px, 500px); */
+@media (min-width:1000px) {
+    .container h1 {
+        text-align: left;
     }
-
-/*     .wrapper > * {
-        padding:2em;    
-    } */
 }
