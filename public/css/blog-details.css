@@ -9,7 +9,8 @@
     padding: 1em;
 }
 
-.container h1 {
+.container p {
+    font-size: 20pt;
     text-align: center;
 }
 
@@ -22,7 +23,7 @@
 }
 
 @media (min-width:1000px) {
-    .container h1 {
+    .container p {
         text-align: left;
     }
 }
