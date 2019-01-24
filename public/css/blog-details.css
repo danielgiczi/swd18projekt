@@ -2,14 +2,14 @@
     box-sizing: border-box;
 }
 
-.container {
+.wrapper {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
 }
 
-.container p {
+.wrapper p {
     font-size: 20pt;
     text-align: center;
     padding-bottom: 1em;
