@@ -1,23 +1,25 @@
-* {
-    box-sizing: border-box;
-}
-
 .wrapper {
-    max-width: 1170px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
 }
 
-.wrapper p {
+.wrapper h1 {
     font-size: 20pt;
     text-align: center;
-    padding-bottom: 1em;
+    margin-bottom:.5rem;
     padding-top: 1em;
 }
 
 .wrapper span {
     font-size: 15pt;
+    display:block;
+    text-align:center;
+    margin:0 0 .5rem 0;
+}
+.blog-detail figure{
+    margin: 1rem 0;
 }
 
 .blog-detail figure img{

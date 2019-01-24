@@ -2,7 +2,21 @@
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+.container h1 {
+    text-align: center;
+    display: block;
+    margin: 0 0 1rem 0;
+    font-size: 1.8rem;
+}
+
+.container .character {
+    display: block;
+    text-align: center;
+    margin: 0px 0 3rem 0;
+    font-size: 1.4rem;
 }
 
 ul {
@@ -107,10 +121,10 @@ ul {
 }
 
 .blog-item:nth-of-type(2) figure img{
-    object-position: 50% 50%;   
+    object-position: 32% 50%;   
 }
 
-.blog-item:nth-of-type(2) figure img{
+.blog-item:nth-of-type(3) figure img{
     object-position: 50% 50%;   
 }
 
@@ -119,6 +133,7 @@ ul {
     left:1rem;
     bottom:1rem;
     right:1rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 .tag-sushi p, .tag-tips, .tag-equipments {
