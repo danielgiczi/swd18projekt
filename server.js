@@ -18,7 +18,7 @@ var getPageData = function (folder) {
     var contentHtml = "";
 
     try {
-        contentHtml = fs.readFileSync(path.join(__dirname, "pages", folder + ".html"))
+        contentHtml = fs.readFileSync(path.join(__dirname, "pages", folder ))
     }
     catch (ex) {
         if (String(ex).indexOf("no such file or directory") > -1) {
