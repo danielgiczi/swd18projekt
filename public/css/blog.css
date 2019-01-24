@@ -113,7 +113,8 @@ ul {
     color: black;
     transition: color 400ms ease;
     -webkit-transition: color 400ms ease; 
-    padding-top: 0px;
+    padding-top: 8px;
+    padding-bottom: 10px;
 }
 
 .tag-sushi p:hover, .tag-tips:hover, .tag-equipments:hover {
