@@ -18,32 +18,43 @@ ul {
     color: black;
 }
 
-.wrapper {
-    box-shadow: 0 0 20px 0 rgb(72, 94, 116, 0.7);
-}
-
-.wrapper > *{
-    padding: 1em;
-    
-}
-
 .info {
     background: #e4e4e4;
     border: 1px solid #333;
 }
 
-.info h3, .info ul {
-    text-align: center;
+.info h3 {
+    text-align: left;
     margin: 0 0 1em 0;
 }
 
-.about, .tags, .category {
+.info span {
+    font-size: 15pt;
+}
+
+.about {
+    height: 250px;
     background: #e4e4e4;
     border: 1px solid #333;
+    padding: 5px 20px 5px 20px;
+}
+
+.tags {
+    height: 350px;
+    background: #e4e4e4;
+    border: 1px solid #333;
+    padding: 5px 20px 5px 20px;
+}
+
+.category {
+    height: 200px;
+    background: #e4e4e4;
+    border: 1px solid #333;
+    padding: 5px 20px 5px 20px;
 }
 
 .about p, .tags p, .category p {
-    font-size: 15pt;
+    font-size: 18pt;
 }
 
 
@@ -97,11 +108,21 @@ ul {
     right:1rem;
 }
 
-/* Lager Screens */
+.tag-sushi p, .tag-tips, .tag-equipments {
+    font-size: 13pt;
+    color: black;
+    transition: color 400ms ease;
+    -webkit-transition: color 400ms ease; 
+    padding-top: 0px;
+}
+
+.tag-sushi p:hover, .tag-tips:hover, .tag-equipments:hover {
+    color: #666;
+}
 
 @media(min-width:1000px) {
     .blog-items {
-float:left;
+        float:left;
         width:68%;
         margin:0 2% 0 0;
     }
@@ -110,11 +131,7 @@ float:left;
         width:30%;
     }
 
-.wrapper > * {
-    padding:2em;    
-}
-
 .info h3, .info ul, .name {
     text-align: left;
-}
+    }
 }
