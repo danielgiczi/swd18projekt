@@ -51,6 +51,11 @@ var getPageData = function (folder) {
 app.get("*", (req, res) => {
     var folder = req.path.replace("/", "");
     if (req.path == "/") folder = "home"
+
+    if(folder.indexOf(".html") === -1){
+        folder = folder + ".html"
+    }
+
     var data = getPageData(folder)
     res.status(data.status);
     res.send(data.html)
