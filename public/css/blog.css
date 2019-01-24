@@ -24,12 +24,20 @@ ul {
 }
 
 .info h3 {
-    text-align: left;
+    text-align: center;
     margin: 0 0 1em 0;
+    font-size:  16pt;
+    color:black;
 }
 
 .info span {
-    font-size: 15pt;
+    font-size: 14pt;
+    color: black;
+}
+
+.info li {
+    font-size: 10pt;
+    color: black;
 }
 
 .about {
