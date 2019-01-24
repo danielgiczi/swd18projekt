@@ -12,6 +12,8 @@
 .container p {
     font-size: 20pt;
     text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 .blog-detail figure img{
