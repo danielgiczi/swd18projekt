@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener("DOMContentLoaded", function () {
     //Die Rezepte-Anzahl wird nur animiert wenn JS aktiviert ist
     document.documentElement.classList += " js";
