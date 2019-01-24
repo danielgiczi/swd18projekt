@@ -1,4 +1,4 @@
-SWD18 Semster1 WebTechnik Gruppenarbeit
+﻿SWD18 Semster1 WebTechnik Gruppenarbeit
 
 Daniel Giczi 
 Dong Xiaodi 
@@ -17,7 +17,7 @@ Dong Xiaodi:
 Setup Schritten:
 - Voraussetzung ist aktuelle npm Version (5.6.0 / 6.6.0)
 - Im Commandline den Ordner mit der package.json öffnen und Befehl 'npm i' ausführen
-- Server lässt sich mit 'npm start' starten
+- Server lässt sich mit 'npm start' starten (eventuell 1x CTRL+C auf Windows wenn nicht Text 'Listening on port 3000' angezeigt wird)
 - Webseite ist unter http://localhost:3000 erreichbar
 
 
