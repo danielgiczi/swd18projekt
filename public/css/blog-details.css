@@ -35,4 +35,12 @@
     .wrapper p {
         text-align: left;
     }
+
+    .wrapper h1 {
+        text-align: left;
+    }
+
+    .wrapper span {
+        text-align: left;
+    }
 }

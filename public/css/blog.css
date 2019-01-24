@@ -60,21 +60,21 @@ ul {
     min-height: 250px;
     background: #e4e4e4;
     border: 1px solid #333;
-    padding: 5px 20px 5px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .tags {
     min-height: 350px;
     background: #e4e4e4;
     border: 1px solid #333;
-    padding: 5px 20px 5px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .category {
     min-height: 200px;
     background: #e4e4e4;
     border: 1px solid #333;
-    padding: 5px 20px 5px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .about p, .tags p, .category p {
@@ -160,14 +160,10 @@ ul {
         width:30%;
     }
 
-/*.info h3, .info ul, .name {
-    text-align: left;
-    }*/
     .info h3 {
     text-align: left;
     font-size:  16pt;
     color:black;
-    padding-top: 10px;
     margin-bottom: 5px;
     }
 
